@@ -1,0 +1,179 @@
+:root {
+    --black: #333230;
+    --gray: #94A19D;
+    --white: #FFFFFF;
+    --dark-green: #29C1A7;
+    --light-green: #EFFFFC;
+    --fondo: #f6f8a4;
+}
+
+body {
+    background: var(--fondo);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+    width: 320px;
+    height: 640px;
+    background: var(--black);
+    border-radius: 32px;
+    display: grid;
+    grid-template-rows: 160px 160px 340px;
+}
+
+.main-container section:nth-child(2) {
+    background: var(--dark-green);
+    border-radius: 32px;
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+}
+
+.main-container section:nth-child(3) {
+    background: var(--light-green);
+    border-radius: 32px;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.main-container header {
+    overflow: hidden;
+}
+
+.main-container .contact {
+    overflow: hidden;
+}
+
+.main-container nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.main-container .tags {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    color: var(--gray);
+    padding: 20px;
+}
+
+.main-container .tags li {
+    margin-right: 24px;
+    font-size: 23px;
+}
+
+.main-container .one .titulo {
+    
+    list-style: none;
+    display: flex;
+    color: var(--white);
+}
+
+.main-container .one {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 10px;
+    color: var(--white);
+    margin-bottom: 0px;
+}
+
+.main-container .one img{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+
+.main-container .two .personas{
+    list-style: none;
+    display: flex;
+    color: var(--white);
+    margin-top: 0px;
+    padding-left: 20px;
+}
+
+.main-container .two .personas li {
+    margin-right: 18px;
+    font-size: 14px;
+}
+
+.main-container .contact .two .personas li img{
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    border:3px solid var(--white);
+    justify-content: center;
+
+}
+
+.main-container .chats .chat{
+    padding: 20px;
+    display: flex;
+    margin-top: -5px;
+    
+}
+
+.main-container .chats .chat ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.main-container .chats .chat .perfil{
+    height: 48px;
+    width: 48px;
+    box-shadow: 2px 2px 5px rgba(27, 28, 29, 0.24);
+    border-radius: 24px;
+}
+
+.main-container .chats .chat .uno{
+    margin-right: 90px;
+    font-size: 12px;
+
+}
+
+#nombre{
+    color: var(--gray);
+}
+
+#mensaje{
+    color: var(--black);
+}
+
+#num{
+    margin-top: 10px;
+}
+
+#numero{
+    height: 15px;
+    width: 15px;
+}
+
+#numero-dentro{
+    color: var(--white);
+    font-size: 8px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transform: translate(-60%, -80%);
+}
+
+.main-container .chats .chat .dos{
+    margin-right: 0px;
+    font-size: 8px;
+}
+
+hr{
+    margin-top: -15px;
+    color: rgb(216, 216, 216)FFF;
+    width: 210px;
+    margin-right: 20px;
+}
+
